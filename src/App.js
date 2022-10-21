@@ -25,15 +25,19 @@ const App = () => {
   };
 
   return (
-    <div className="app-container">
-      <div className="temperature-display-container">
-        {/* {temp > 14 && <div className="temperature-display hot">{temp}°C</div>} */}
-        {/* {temp < 15 && <div className="temperature-display cold">{temp}°C</div>} */}
-        <div className={`temperature-display ${tempColor}`}>{temp}°C</div>
-      </div>
-      <div className="button-container">
-        <button onClick={handleIncrease}>+</button>
-        <button onClick={handleDecrease}>-</button>
+    <div>
+      <h1>Temperature control app under 25 min</h1>
+
+      <div className="app-container">
+        <div className="temperature-display-container">
+          {/* {temp > 14 && <div className="temperature-display hot">{temp}°C</div>} */}
+          {/* {temp < 15 && <div className="temperature-display cold">{temp}°C</div>} */}
+          <div className={`temperature-display ${tempColor}`}>{temp}°C</div>
+        </div>
+        <div className="button-container">
+          <button onClick={handleIncrease}>+</button>
+          <button onClick={handleDecrease}>-</button>
+        </div>
       </div>
     </div>
   );
